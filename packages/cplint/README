@@ -1,0 +1,34 @@
+This directory contains the code of the LPAD anc CP-logic interpreter cplint
+
+COMPILATION:
+This package requires CUDD and GLIB version 1.2.
+You can download CUDD from http://vlsi.colorado.edu/~fabio/CUDD/ 
+You can download GLIB from http://www.gtk.org/. This is a standard Linux package 
+so it is easy to install using the package management software of your Linux 
+distribution
+
+INSTALLATION:
+Compile CUDD:
+	1) downlad cudd-2.4.2.tar.gz
+	2) decompress it
+	3) cd cudd-2.4.2
+	4) check makefile options
+	5) make
+
+Installation of cplint:
+When compiling Yap, use
+	configure --enable-cplint=DIR
+Under Windows, you have to use cygwin (CUDD does not compile under MinGW), so
+	configure --enable-cplint --enable-cygwin=DIR
+where DIR is the directory where you compiled CUDD 
+
+
+FEEDBACK:
+
+Send feedback to:
+
+Fabrizio Riguzzi
+University of Ferrara 
+Dept. of Engineering
+fabrizio.riguzzi@unife.it
+http://www.ing.unife.it/Docenti/FabrizioRiguzzi/
